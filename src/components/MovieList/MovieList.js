@@ -1,16 +1,21 @@
 import React from 'react';
 
-function MovieList(movieList) {
+function MovieList({movies}) {
     return (
         <ul>
-            {/*{movieList.movies.map((movie) => (*/}
-            {/*    // <Movie*/}
-            {/*    //     key={movie.id}*/}
-            {/*    //     title={movie.title}*/}
-            {/*    //     releaseDate={movie.releaseDate}*/}
-            {/*    //     openingText={movie.openingText}*/}
-            {/*    // />*/}
-            {/*))}*/}
+            {movies.map((movie, index) => (
+                // <Movie
+                //     key={movie.id}
+                //     title={movie.title}
+                //     releaseDate={movie.releaseDate}
+                //     openingText={movie.openingText}
+                // />
+                <li key={index}>
+                    <span>{movie.title}</span>
+                    <span>{movie.releaseDate}</span>
+                    <span>{movie.openingText}</span>
+                </li>
+            ))}
         </ul>
     );
 }
