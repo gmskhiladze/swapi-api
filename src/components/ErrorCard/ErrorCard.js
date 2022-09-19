@@ -10,7 +10,7 @@ function ErrorCard({errors}) {
                 <p>{errorMessage}</p>
             </div>
         </div>
-    );
+    )
 }
 
 export default ErrorCard;

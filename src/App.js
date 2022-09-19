@@ -3,6 +3,7 @@ import axios from "axios";
 import {useState} from "react";
 import MovieList from "./components/MovieList/MovieList";
 import ErrorCard from "./components/ErrorCard/ErrorCard";
+import Counter from "./components/Counter/Counter";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         {!reqError.isError && movieList.length !== 0 && <section>
             <MovieList movies={movieList}/>
         </section>}
+        <Counter/>
     </>);
 }
 

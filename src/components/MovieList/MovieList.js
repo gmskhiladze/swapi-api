@@ -1,6 +1,7 @@
 import React from 'react';
 
 function MovieList({movies}) {
+    console.log(movies)
     return (
         <ul>
             {movies.map((movie, index) => (
@@ -17,7 +18,7 @@ function MovieList({movies}) {
                 </li>
             ))}
         </ul>
-    );
+    )
 }
 
 export default MovieList;
